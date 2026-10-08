@@ -1,9 +1,11 @@
+import os
+
 import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load CSV file
 # Replace 'data.csv' with the actual filename in your repository
-#df = pd.read_csv('data.csv')
+df = pd.read_csv(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data.csv'))
 
 # Example: Assume the CSV has columns "Category" and "Value"
 # Adjust column names based on your CSV structure
